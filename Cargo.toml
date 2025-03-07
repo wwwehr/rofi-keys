@@ -1,0 +1,18 @@
+[package]
+name = "rofi-keys"
+version = "0.1.0"
+edition = "2021"
+authors = ["Niko Wehr <your.email@example.com>"]
+description = "A hotkey menu system for Rofi"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true  # Automatically strip symbols from the binary

@@ -1,0 +1,19 @@
+# Clippy configuration for the rofi-keys project
+
+# Enable most lints for better code quality
+warn-on-all-wildcard-imports = true
+
+# Pedantic mode
+pedantic = true
+
+# Restrict certain constructs
+too-many-arguments-threshold = 5
+too-many-lines-threshold = 100
+
+# Disable some lints that might be too restrictive for this project
+disallowed-methods = []
+disallowed-types = []
+
+# Enforce documentation
+doc-valid-idents = true
+missing-docs-in-private-items = true
